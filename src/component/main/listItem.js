@@ -1,17 +1,18 @@
 import React,{Component} from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 
 export default class ListItem extends React.Component{
     render(){
         return(
             <View style = {styles.container}>
                 <Text style = {styles.containerTitle}>모임 추천</Text>
-                <View style = {styles.listBox}>
+                <ScrollView horizontal={true}
+                showsHorizontalScrollIndicator = {true}>
                     <View style = {styles.listItem}>
                         <Image style={styles.thumbnail} source={{uri: 'https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg'}}/>
                         <View style={styles.thumbnailDesc}>
                             <Text style = {styles.listTitle}>제목입니다.</Text>
-                            <Text style = {styles.listDesc}>썸네일 설명 글입니다.</Text>
+                            <Text style = {styles.listDesc}>썸네일 설명 글입니다.썸네일 설명 글입니다.썸네일 설명 글입니다.썸네일 설명 글입니다.</Text>
                         </View>
                     </View>
                     <View style = {styles.listItem}>
@@ -21,9 +22,22 @@ export default class ListItem extends React.Component{
                             <Text style = {styles.listDesc}>썸네일 설명 글입니다.</Text>
                         </View>
                     </View>
-                </View>
+                    <View style = {styles.listItem}>
+                        <Image style={styles.thumbnail} source={{uri: 'https://cdn.pixabay.com/photo/2018/01/09/16/11/angler-3071970__340.jpg'}}/>
+                        <View style={styles.thumbnailDesc}>
+                            <Text style = {styles.listTitle}>제목입니다.</Text>
+                            <Text style = {styles.listDesc}>썸네일 설명 글입니다.</Text>
+                        </View>
+                    </View>
+                    <View style = {styles.listItem}>
+                        <Image style={styles.thumbnail} source={{uri: 'https://cdn.pixabay.com/photo/2017/02/27/12/34/sunset-2103130__340.jpg'}}/>
+                        <View style={styles.thumbnailDesc}>
+                            <Text style = {styles.listTitle}>제목입니다.</Text>
+                            <Text style = {styles.listDesc}>썸네일 설명 글입니다.</Text>
+                        </View>
+                    </View>
+                </ScrollView>
             </View>        
-        
         )
     }
 }
@@ -47,15 +61,11 @@ const styles = StyleSheet.create({
         fontWeight:"700",
         color:"black",
     },
-    listBox:{
-        flex:1,
-        flexDirection:"row",
-    },
     listItem:{
-        marginTop:"5%",
-        marginLeft:"7%",
         height:"40%",
-        width:"40%",
+        width:200,
+        marginLeft:20,
+        marginTop:10
     },
     thumbnail: {
         width: "100%",
@@ -66,17 +76,18 @@ const styles = StyleSheet.create({
     },
     thumbnailDesc:{
         backgroundColor:"white",
-        paddingTop:5,
-        paddingBottom:10,
-        paddingLeft:10,
+        paddingLeft:15,
+        paddingRight:15,
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
+        height:"97%",
+        overflow:"hidden"
     },
     listTitle:{
         fontWeight:"700",
         fontSize:16,
-        paddingTop:10,
-        paddingBottom:5
+        paddingTop:3,
+        paddingBottom:3
     }
     
 })

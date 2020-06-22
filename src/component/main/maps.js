@@ -5,7 +5,7 @@ export default class Maps extends React.Component{
     render(){
         return(
             <View style = {styles.container}>
-                <Text style = {styles.listBox}>Maps</Text>
+                <Image style={styles.mapImage} source = {require('../../../assets/img/map.png')} />
             </View>
         )
     }
@@ -14,8 +14,9 @@ export default class Maps extends React.Component{
 const styles = StyleSheet.create({
     container:{
         flex:1
-    },listBox:{
+    },mapImage:{
         flex:1,
+        width: "100%",
     }
     
 })

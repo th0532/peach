@@ -4,19 +4,27 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 export default class Top extends React.Component{
     render(){
         return(
-            <View style={styles.top}>
-                <Text style={styles.logo}>Peach</Text>
-                <Image style={styles.login} source={{uri: 'https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814081_960_720.png'}}/>
-            </View>
-        );
+            <View style={styles.header}>
+                <View style={styles.statusBar}></View>
+                <View style={styles.top}>
+                    <Text style={styles.logo}>Peach</Text>
+                    <Image style={styles.login} source={{uri: 'https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814081_960_720.png'}}/>
+                </View>
+            </View>);
     }
 }
 const styles = StyleSheet.create({
+    header:{
+        height:"12%",
+        backgroundColor:"#f9f9f9"
+    },
+    statusBar:{
+        marginTop:"12%"
+    },
     top:{
-        height:"7%",
+        height:45,
         backgroundColor:"#ffe0e0",
         paddingLeft:30,
-        paddingTop:5,
         paddingRight:30,
         flexDirection:"row",
         justifyContent: "space-between",

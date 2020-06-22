@@ -8,9 +8,9 @@ export default class MainPage extends React.Component{
     render(){
         return(
             <View style = {styles.container}>
-                <Header>sadasd</Header>
-                <MainContainer >dada</MainContainer>
-                <Footer>bottom</Footer>
+                <Header></Header>
+                <MainContainer ></MainContainer>
+                <Footer></Footer>
             </View>
         );
     }
@@ -18,6 +18,6 @@ export default class MainPage extends React.Component{
 
 const styles = StyleSheet.create({
     container:{
-        flex:1
+        flex:1,
     },
 })
