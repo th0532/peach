@@ -1,8 +1,10 @@
 import React,{Component} from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-export default class Fotter extends React.Component{
+export default class Footer extends React.Component{
     render(){
+
+        // 
         return(
             <View style={styles.container}>
                 <Text style={styles.menu}>Home</Text>

@@ -6,8 +6,7 @@ export default class ListItem extends React.Component{
         return(
             <View style = {styles.container}>
                 <Text style = {styles.containerTitle}>모임 추천</Text>
-                <ScrollView horizontal={true}
-                showsHorizontalScrollIndicator = {true}>
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator = {true}>
                     <View style = {styles.listItem}>
                         <Image style={styles.thumbnail} source={{uri: 'https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg'}}/>
                         <View style={styles.thumbnailDesc}>

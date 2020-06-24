@@ -2,12 +2,12 @@ import React,{Component} from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default class Top extends React.Component{
-    render(){
+    render(props){
         return(
             <View style={styles.header}>
                 <View style={styles.statusBar}></View>
                 <View style={styles.top}>
-                    <Text style={styles.logo}>Peach</Text>
+                    <Text style={styles.logo}>{this.props.title}</Text>
                     <Image style={styles.login} source={{uri: 'https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814081_960_720.png'}}/>
                 </View>
             </View>);
