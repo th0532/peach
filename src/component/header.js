@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         backgroundColor:"#f9f9f9"
     },
     statusBar:{
-        marginTop:"12%"
+        marginTop:"9%"
     },
     top:{
         height:45,
