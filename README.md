@@ -12,3 +12,6 @@
 
 	Location
         yarn add react-native-geolocation-service
+
+    Axios
+        yarn add axios
