@@ -30,7 +30,7 @@ import axios from "axios";
                 description="this is a marker example"
               />
             })}
-            {/* map 함수 Marker 컴포넌트 못불러옴 */}
+            {/* map 함수 Marker 컴포넌트 못 불러옴,, */}
             <Marker
                 coordinate={{latitude:37.5990998, longitude:126.9861493}}
                 title="this is a marker"
@@ -50,5 +50,4 @@ const styles = StyleSheet.create({
         flex:1,
         width: "100%",
     }
-    
 })
